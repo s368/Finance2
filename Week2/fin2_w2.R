@@ -36,6 +36,9 @@ q1_draft<-slopeSharpe * 5 + 1
 q1<-round(q1_draft,digits=2)
 
 #Question_2: Compute the true expected return (realized return) of the portfolio that you computed in Problem 1.
+#
+#MyComment: from forum => (1)use ptfSharpe but real rates (2) the same 5% valatility condition.
+#
 #ptf_norm<-sum(solve(Vmatrix) %*% c(m_real_1-rFree,m_real_2-rFree,m_real_3-rFree))
 #ptfSharpe<-solve(Vmatrix) %*% c(m_real_1-rFree,m_real_2-rFree,m_real_3-rFree)/ptf_norm
 meanSharpe_real<-sum(ptfSharpe * c(m_real_1,m_real_2,m_real_3)) # Q2 incorrect as asked 5!
