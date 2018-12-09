@@ -66,7 +66,8 @@ q4<-round(q4_draft,digits = 2)
 n<-15
 r<-12
 p<-1/2
-q5_draft<-p**n*(choose(n,12)+choose(n,13)+choose(n,14)+choose(n,15))
+k<-r:n # 12:15
+q5_draft<-p**n*sum(choose(n,k))
 q5<-round(q5_draft,digits = 4) # =0.0176 - OK!
 
 #How to calculate covariance matrix?
