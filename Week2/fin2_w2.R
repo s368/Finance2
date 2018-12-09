@@ -80,6 +80,9 @@ m_one<-p**n*sum(choose(n,k))
 m_best<-1-(1-m_one)^M
 q6<-round(m_best,digits = 4)
 
+#Question_7: Consider a version of the Monty Hall problem where there are 4 doors. There are goats behind 2 of the doors and valuable prizes behind the other two doors. If you behave optimally, what is the probability that you will win one of the valuable prizes?
+q_7<-6/8 # =0.75 - all variants should be considered - like original Monty Hall problem => 12 final states where 8 with "change" and 3 without "change" => 6 "win" from 8 "change" states => i.e. 6/8 "win".
+
 #How to calculate covariance matrix?
 m_1<-c(2.1675,3.3875,-2.5194,-1.3959,-2.7264,0.7832,3.9749,-3.3869,-0.1714,0.5439,1.0913,-1.0361,-0.871,1.0377,-2.7236,2.7485,-0.8348,-1.2728,-0.5232,0.1174,1.1843,0.6003,-0.5785,-1.8834,1.0666,3.7147,-0.3213,1.3712,-0.7987,0.949,-2.5322,0.4613,-1.6205,4.7482,1.6551,-5.1563,-1.0738,-1.2798,-0.7793,-0.3613,0.1896,-2.6047,-3.1645,-0.6066,0.8595,3.642,0.6684,1.5556,1.4717,-2.6414,-1.6742,1.5918,-1.4625,0.0491,-0.2674,1.0214,1.0679,-5.4239,0.4125,4.9665)
 
