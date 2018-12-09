@@ -70,6 +70,16 @@ k<-r:n # 12:15
 q5_draft<-p**n*sum(choose(n,k))
 q5<-round(q5_draft,digits = 4) # =0.0176 - OK!
 
+#Question_6: Suppose now that there are M = 100M=100 fund managers, each of whom have 15-year track records. Suppose that the best manager outperformed in 14 of the 15 years. Compute the probability that the best of the managers had a track record as good as or better than this if all of them had no skill. You may assume that success or failure in any year is independent of success or failure in any other year and that the managers' performances are independent of each other.
+M<-100
+n<-15
+r<-14
+p<-1/2
+k<-r:n # 14:15
+m_one<-p**n*sum(choose(n,k))
+m_best<-1-(1-m_one)^M
+q6<-round(m_best,digits = 4)
+
 #How to calculate covariance matrix?
 m_1<-c(2.1675,3.3875,-2.5194,-1.3959,-2.7264,0.7832,3.9749,-3.3869,-0.1714,0.5439,1.0913,-1.0361,-0.871,1.0377,-2.7236,2.7485,-0.8348,-1.2728,-0.5232,0.1174,1.1843,0.6003,-0.5785,-1.8834,1.0666,3.7147,-0.3213,1.3712,-0.7987,0.949,-2.5322,0.4613,-1.6205,4.7482,1.6551,-5.1563,-1.0738,-1.2798,-0.7793,-0.3613,0.1896,-2.6047,-3.1645,-0.6066,0.8595,3.642,0.6684,1.5556,1.4717,-2.6414,-1.6742,1.5918,-1.4625,0.0491,-0.2674,1.0214,1.0679,-5.4239,0.4125,4.9665)
 
